@@ -8,9 +8,23 @@ function signup(){
     var obj ={
         userEmail,
         userPassword
+    }    
+    console.log(obj)
+    if(!userEmail === "" || userPassword === ""){
+        alert('data field must be filled')
     }
+    if(!userEmail === "" && userPassword === ""){
+        alert('data2 field must be filled')
+    }
+    // if((userEmail==="" & userPassword==="") &(userEmail===""|| userPassword==="")){
+    //    alert("email and  passwoord required")
+       
+    // }  
 
-    if((!data)){
+
+    if(!data){
+        
+  
         console.log("welcome developers")
 
     localStorage.setItem("userData",JSON.stringify([obj]))
@@ -47,14 +61,8 @@ const signin = ()=>{
                 flag = true
             }
             
-        }if(flag===false){
+        }if(!flag){
                 alert("please register your acount")
             }
 
-
-    // data.forEach((e,i) => {
-       
-        
-        
-    // });
 }
